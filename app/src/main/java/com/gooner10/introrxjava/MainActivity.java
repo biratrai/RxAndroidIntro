@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Nullable
     private Gist getGist() throws IOException {
+        // Throwing some divide by zero exception
+        // Which will be handled by the Observable.error
+        int z = 1/0;
+
         OkHttpClient okHttpClient = new OkHttpClient();
 
         Request request = new Request.Builder()
@@ -89,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     return Observable.just(getGist());
                 } catch (IOException e) {
                     e.printStackTrace();
-                    return null;
+                    return Observable.error(e);  // Returning Observable.error to be handled
                 }
             }
         });
