@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     Response response = okHttpClient.newCall(request).execute();
                     if (response.isSuccessful()) {
-                        Gist gist = new Gson().fromJson(response.body().charStream(), Gist.class);
-                        return gist;
+                        return new Gson().fromJson(response.body().charStream(), Gist.class);
                     }
                     return null;
                 } catch (IOException e) {
