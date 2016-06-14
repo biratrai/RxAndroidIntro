@@ -70,11 +70,9 @@ public class MainActivity extends AppCompatActivity {
                 .url("https://api.github.com/gists/db72a05cc03ef523ee74")
                 .build();
 
-
         Response response = okHttpClient.newCall(request).execute();
         if (response.isSuccessful()) {
-            Gist gist = new Gson().fromJson(response.body().charStream(), Gist.class);
-            return gist;
+            return new Gson().fromJson(response.body().charStream(), Gist.class);
         }
         return null;
 
