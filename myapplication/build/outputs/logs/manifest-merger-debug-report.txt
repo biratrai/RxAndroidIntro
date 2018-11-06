@@ -1,65 +1,96 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8f43f8c9be0110b9edeef4f28faf832d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/d22e2961b577f2ed50859eb2c83a28ad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/f9cff1c4b826b801303b2e67d2d7ca46/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/25c5894a9cfc8d6b8202915d1a840401/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/52bdcdfbb14fe89b49c23c42366d4d58/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/656395df84497af61071920a8e91ee8f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3f038c341d33f62aecd4d93898b4821c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e49c7147ea22e5083003ec8e817b38a2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c35876126a0ddfa9c8495694816523e8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/96d0b5213665de0ab8ed43d9a238423d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/400fd356a916ad6daaf45f4fe5889841/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
 	package
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:3:5-41
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
-	xmlns:android
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:11-69
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:1-20:12
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:5:5-18:19
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
-	android:label
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:8:9-41
+ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:5:5-18:19
 	android:supportsRtl
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:9:9-35
-	android:allowBackup
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:8:9-41
 	android:icon
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:10:9-40
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:10:9-40
 activity#com.gooner10.myapplication.MainActivity
-ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:11:9-17:20
+ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:11:9-17:20
 	android:name
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:11:19-47
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:12:13-16:29
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:11:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:12:13-16:29
 action#android.intent.action.MAIN
-ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:13:17-69
+ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:13:17-69
 	android:name
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:13:25-66
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:13:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:15:17-77
+ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml:15:27-74
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml:15:27-74
 uses-sdk
-INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:animated-vector-drawable:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:20:5-43
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.3.0] /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:23:9-75
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8f43f8c9be0110b9edeef4f28faf832d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/8f43f8c9be0110b9edeef4f28faf832d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/d22e2961b577f2ed50859eb2c83a28ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/d22e2961b577f2ed50859eb2c83a28ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/f9cff1c4b826b801303b2e67d2d7ca46/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/f9cff1c4b826b801303b2e67d2d7ca46/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/25c5894a9cfc8d6b8202915d1a840401/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/25c5894a9cfc8d6b8202915d1a840401/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/52bdcdfbb14fe89b49c23c42366d4d58/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/52bdcdfbb14fe89b49c23c42366d4d58/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/656395df84497af61071920a8e91ee8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/656395df84497af61071920a8e91ee8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3f038c341d33f62aecd4d93898b4821c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3f038c341d33f62aecd4d93898b4821c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e49c7147ea22e5083003ec8e817b38a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e49c7147ea22e5083003ec8e817b38a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c35876126a0ddfa9c8495694816523e8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c35876126a0ddfa9c8495694816523e8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/96d0b5213665de0ab8ed43d9a238423d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/96d0b5213665de0ab8ed43d9a238423d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/400fd356a916ad6daaf45f4fe5889841/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/Gooner10/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/400fd356a916ad6daaf45f4fe5889841/AndroidManifest.xml:20:5-44
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
-		INJECTED from /Users/Gooner10/AndroidstudioProjects/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		ADDED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
+		INJECTED from /Users/Gooner10/AndroidstudioProjects/git-project/IntroRxJava/myapplication/src/main/AndroidManifest.xml
