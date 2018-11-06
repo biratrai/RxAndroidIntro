@@ -22,94 +22,27 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func0;
 import rx.schedulers.Schedulers;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainActivityContract.View {
     public static final String TAG = MainActivity.class.getSimpleName();
-    private Subscription subscription;
-
+    private MainActivityContract.Presenter presenter;
     @Override
     @DebugLog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        subscription = getGistObservable()
-                .subscribeOn(Schedulers.io()) // Gets the work off the mainUi thread
-                .observeOn(AndroidSchedulers.mainThread()) // Delivers the result on mainUiThread
-                .subscribe(new Subscriber<Gist>() {
-                    @DebugLog
-                    @Override
-                    public void onCompleted() {
-
-                    }
-
-                    @Override
-                    @DebugLog
-                    public void onError(Throwable e) {
-                        Log.e(TAG, e.getMessage(), e);
-                    }
-
-                    @Override
-                    @DebugLog
-                    public void onNext(Gist gist) {
-                        StringBuilder stringBuilder = new StringBuilder();
-                        for (Map.Entry<String, GistFile> entry : gist.files.entrySet()) {
-                            stringBuilder.append(entry.getKey());
-                            stringBuilder.append(" - ");
-                            stringBuilder.append("Length of file ");
-                            stringBuilder.append(entry.getValue().content.length());
-                            stringBuilder.append("\n");
-                        }
-
-                        TextView text = findViewById(R.id.gist_text);
-                        text.setText(stringBuilder.toString());
-                    }
-                });
-
-    }
-
-    @Nullable
-    @DebugLog
-    private Gist getGist() throws IOException {
-        OkHttpClient okHttpClient = new OkHttpClient();
-
-        Request request = new Request.Builder()
-                .url("https://api.github.com/gists/db72a05cc03ef523ee74")
-                .build();
-
-        Response response = okHttpClient.newCall(request).execute();
-        if (response.isSuccessful()) {
-            return new Gson().fromJson(response.body().charStream(), Gist.class);
-        }
-        return null;
-
-    }
-
-    // Creating a method that returns Gist Observable
-    @DebugLog
-    public Observable<Gist> getGistObservable() {
-        // Returns an Observable that calls an Observable factory to create an Observable for each
-        // new Observer that subscribes
-        return Observable.defer(new Func0<Observable<Gist>>() {
-            // Func0 is a function with zero arguments
-            @Override
-            @DebugLog
-            public Observable<Gist> call() {
-                try {
-                    // Returns an Observable that emits a single item and then completes.
-                    return Observable.just(getGist());
-                } catch (IOException e) {
-                    Log.e(TAG, "call: ", e);
-                    return null;
-                }
-            }
-        });
+        presenter = new MainActivityPresenter(this);
+        presenter.subscribe();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (subscription != null && !subscription.isUnsubscribed()) {
-            subscription.unsubscribe();  // Release the subscription method for the Garbage collection
-        }
+        presenter.unsubscribe();
+    }
+
+    @Override
+    public void showData(String gistData) {
+        TextView text = findViewById(R.id.gist_text);
+        text.setText(gistData);
     }
 }
