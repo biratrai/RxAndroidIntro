@@ -14,6 +14,7 @@ import com.squareup.okhttp.Response;
 import java.io.IOException;
 import java.util.Map;
 
+import hugo.weaving.DebugLog;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
@@ -22,10 +23,11 @@ import rx.functions.Func0;
 import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String LOG_TAG = MainActivity.class.getSimpleName();
+    public static final String TAG = MainActivity.class.getSimpleName();
     private Subscription subscription;
 
     @Override
+    @DebugLog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -34,17 +36,20 @@ public class MainActivity extends AppCompatActivity {
                 .subscribeOn(Schedulers.io()) // Gets the work off the mainUi thread
                 .observeOn(AndroidSchedulers.mainThread()) // Delivers the result on mainUiThread
                 .subscribe(new Subscriber<Gist>() {
+                    @DebugLog
                     @Override
                     public void onCompleted() {
 
                     }
 
                     @Override
+                    @DebugLog
                     public void onError(Throwable e) {
-                        Log.e(LOG_TAG, e.getMessage(), e);
+                        Log.e(TAG, e.getMessage(), e);
                     }
 
                     @Override
+                    @DebugLog
                     public void onNext(Gist gist) {
                         StringBuilder stringBuilder = new StringBuilder();
                         for (Map.Entry<String, GistFile> entry : gist.files.entrySet()) {
@@ -55,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                             stringBuilder.append("\n");
                         }
 
-                        TextView text = (TextView) findViewById(R.id.gist_text);
+                        TextView text = findViewById(R.id.gist_text);
                         text.setText(stringBuilder.toString());
                     }
                 });
@@ -63,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Nullable
+    @DebugLog
     private Gist getGist() throws IOException {
         OkHttpClient okHttpClient = new OkHttpClient();
 
@@ -79,14 +85,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Creating a method that returns Gist Observable
+    @DebugLog
     public Observable<Gist> getGistObservable() {
         return Observable.defer(new Func0<Observable<Gist>>() {
             @Override
+            @DebugLog
             public Observable<Gist> call() {
                 try {
                     return Observable.just(getGist());
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Log.e(TAG, "call: ", e);
                     return null;
                 }
             }
