@@ -31,8 +31,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.2'
 
     // RxJava and RxAndroid dependencies
-    compile 'io.reactivex:rxandroid:1.0.1'
+    implementation 'io.reactivex:rxandroid:1.2.1'
     // Because RxAndroid releases are few and far between, it is recommended you also
     // explicitly depend on RxJava's latest version for bug fixes and new features.
-    compile 'io.reactivex:rxjava:1.0.14'
+    implementation 'io.reactivex:rxjava:1.2.4'
 }
