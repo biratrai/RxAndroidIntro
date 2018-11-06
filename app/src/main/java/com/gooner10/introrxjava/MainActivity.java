@@ -87,11 +87,15 @@ public class MainActivity extends AppCompatActivity {
     // Creating a method that returns Gist Observable
     @DebugLog
     public Observable<Gist> getGistObservable() {
+        // Returns an Observable that calls an Observable factory to create an Observable for each
+        // new Observer that subscribes
         return Observable.defer(new Func0<Observable<Gist>>() {
+            // Func0 is a function with zero arguments
             @Override
             @DebugLog
             public Observable<Gist> call() {
                 try {
+                    // Returns an Observable that emits a single item and then completes.
                     return Observable.just(getGist());
                 } catch (IOException e) {
                     Log.e(TAG, "call: ", e);
