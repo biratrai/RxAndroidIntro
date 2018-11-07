@@ -17,6 +17,7 @@ import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
 import rx.functions.Func0;
 import rx.schedulers.Schedulers;
 
@@ -33,6 +34,13 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
     public void subscribe() {
         subscription = getGistObservable()
                 .subscribeOn(Schedulers.io()) // Gets the work off the mainUi thread
+                .observeOn(Schedulers.io())
+                .doOnNext(new Action1<Gist>() {
+                    @Override
+                    public void call(Gist gist) {
+                        saveToDb();
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread()) // Delivers the result on mainUiThread
                 .subscribe(new Subscriber<Gist>() {
                     @DebugLog
@@ -61,6 +69,10 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
                         view.showData(stringBuilder.toString());
                     }
                 });
+    }
+
+    private void saveToDb() {
+        Log.i(TAG, "saveToDb: ");
     }
 
     @Override
