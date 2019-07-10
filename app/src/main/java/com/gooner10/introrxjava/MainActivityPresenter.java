@@ -2,7 +2,6 @@ package com.gooner10.introrxjava;
 
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.squareup.okhttp.OkHttpClient;
@@ -13,17 +12,18 @@ import java.io.IOException;
 import java.util.Map;
 
 import hugo.weaving.DebugLog;
-import rx.Observable;
-import rx.Subscriber;
-import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Func0;
-import rx.schedulers.Schedulers;
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.observers.DisposableObserver;
+import io.reactivex.schedulers.Schedulers;
 
 public class MainActivityPresenter implements MainActivityContract.Presenter {
     public static final String TAG = MainActivityPresenter.class.getSimpleName();
     private final MainActivityContract.View view;
-    private Subscription subscription;
+    private Disposable disposable;
 
     public MainActivityPresenter(MainActivityContract.View view) {
         this.view = view;
@@ -31,20 +31,19 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
 
     @Override
     public void subscribe() {
-        subscription = getGistObservable()
+        disposable = getGistObservable()
                 .subscribeOn(Schedulers.io()) // Gets the work off the mainUi thread
                 .observeOn(AndroidSchedulers.mainThread()) // Delivers the result on mainUiThread
-                .subscribe(new Subscriber<Gist>() {
-                    @DebugLog
-                    @Override
-                    public void onCompleted() {
-
-                    }
-
+                .subscribeWith(new DisposableObserver<Gist>() {
                     @Override
                     @DebugLog
                     public void onError(Throwable e) {
                         Log.e(TAG, e.getMessage(), e);
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.i(TAG, "onComplete: ");
                     }
 
                     @Override
@@ -65,8 +64,8 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
 
     @Override
     public void unsubscribe() {
-        if (subscription != null && !subscription.isUnsubscribed()) {
-            subscription.unsubscribe();  // Release the subscription method for the Garbage collection
+        if (disposable != null && !disposable.isDisposed()) {
+            disposable.dispose();  // Release the disposable method for the Garbage collection
         }
     }
 
@@ -92,17 +91,15 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
     public Observable<Gist> getGistObservable() {
         // Returns an Observable that calls an Observable factory to create an Observable for each
         // new Observer that subscribes
-        return Observable.defer(new Func0<Observable<Gist>>() {
-            // Func0 is a function with zero arguments
+        return Observable.create(new ObservableOnSubscribe<Gist>() {
             @Override
-            @DebugLog
-            public Observable<Gist> call() {
+            public void subscribe(ObservableEmitter<Gist> emitter) {
                 try {
                     // Returns an Observable that emits a single item and then completes.
-                    return Observable.just(getGist());
+                    emitter.onNext(getGist());
                 } catch (IOException e) {
                     Log.e(TAG, "call: ", e);
-                    return null;
+                    emitter.onError(e);
                 }
             }
         });
