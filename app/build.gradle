@@ -29,7 +29,7 @@ dependencies {
 
     // Networking dependencies
     implementation 'com.squareup.okhttp:okhttp:2.7.2'
-    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
 
     // RxJava and RxAndroid dependencies
     implementation 'io.reactivex:rxandroid:1.2.1'
